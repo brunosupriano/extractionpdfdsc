@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(python -c \"import sys; print\\(sys.version\\); import fitz; print\\(''PyMuPDF available''\\)\")",
+      "Bash(python:*)",
+      "Bash(timeout 300 python -c \":*)",
+      "Bash(find 'D:\\\\Relatório Roberta' -type f -name *)",
+      "Bash(find 'D:\\\\Relatório Roberta' -type f \\\\\\(-name __init__.py -o -name .env -o -name *.json -o -name *.log -o -name *.txt -o -name *.md \\\\\\))",
+      "Bash(wc -l D:Relatório Roberta/*.py D:Relatório Roberta/parsers/*.py D:Relatório Roberta/extractors/*.py D:Relatório Roberta/tests/*.py)",
+      "Bash(sort -k2)",
+      "Bash(del \"D:\\\\Relatório Roberta\\\\extractors\\\\markitdown_extractor.py\")",
+      "Bash(del \"D:\\\\Relatório Roberta\\\\extractors\\\\pdfplumber_extractor.py\")",
+      "Bash(python -c \":*)",
+      "Bash(cd:*)"
+    ]
+  }
+}

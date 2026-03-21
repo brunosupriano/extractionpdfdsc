@@ -1,0 +1,33 @@
+layouts:
+  modelo_a:
+    assinaturas: ["CONDOMINIO RESIDENCIAL ALTA VISTA", "OSCAR SCHICK"]
+    regex_bloco: "BL\\.\\s*([A-Z0-9]+)"
+    regex_apto:  "(?i)(?:CASA|APTO)\\s+(\\d+)"
+    regex_total: "(?i)Com\\s+multa\\s*[:\\s]*([\\d\\.,]+)"
+    item_despesa: "^(\\d+)?\\s*(.*?)\\s+([\\d\\.,]+)\\s*\\S?$"
+    dois_colunas: true
+
+  modelo_b:
+    assinaturas: ["RESIDENCIAL ITACOLOMI", "COMPOSIÇÃO DO RATEIO"]
+    regex_bloco: "EDIFÍCIO\\s+(.*?)$"
+    regex_apto:  "^\\s*\\d+\\s+(\\d+)\\s+-\\s+"
+    regex_total: "(?i)^\\s*TOTAL\\b[\\s\\|:]*([\\d\\.,]+)"
+    item_despesa: "^(\\d{2}/\\d{2}/\\d{4})\\s+(.*?)\\s+([\\d\\.,]+)$"
+    dois_colunas: false
+
+  modelo_c:
+    assinaturas: ["RESIDENCIAL PORTO ONIX", "Crédito Real Imóveis"]
+    regex_bloco: "(?i)Bloco:\\s*(.*?)$"
+    regex_apto:  "^\\s*(\\d{3,4})\\b"
+    regex_total: "Total\\s+DOC\\s*\\d{3,4}\\s*([\\d\\.,]+)"
+    item_despesa: "^(.*?)\\s+([\\d\\.,]+)(?:\\(.*?\\))?$"
+    dois_colunas: false
+
+validacao:
+  tolerancia_percentual: 0.5
+  flag_divergente: "DIVERGENTE"
+  flag_ok: "OK"
+
+saida:
+  arquivo: "consolidado_despesas.xlsx"
+  diretorio: "./output"

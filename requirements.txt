@@ -1,0 +1,25 @@
+# Extração de PDF
+pymupdf==1.24.11
+pdfplumber==0.11.4
+
+# Modelos e validação
+pydantic==2.10.1
+
+# Dados e exportação
+pandas==2.2.3
+openpyxl==3.1.5
+
+# Detecção de layout
+rapidfuzz==3.10.1
+
+# CLI e logs
+typer==0.15.1
+loguru==0.7.2
+tqdm==4.67.1
+
+# Configuração
+pyyaml==6.0.2
+
+# Interface gráfica (desktop.py)
+customtkinter
+PyPDF2

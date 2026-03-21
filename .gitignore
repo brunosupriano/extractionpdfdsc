@@ -1,0 +1,43 @@
+# ─── PDFs sensíveis ────────────────────────────────────────────────────────────
+# PDFs de entrada (dados dos condôminos)
+input_pdfs/*.pdf
+input_pdfs/*.PDF
+
+# Relatórios gerados (dados financeiros extraídos)
+output/*.xlsx
+output/*.xls
+output/*.csv
+# Arquivos temporários do Excel (abertos em background)
+output/~$*
+
+# ─── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Ambientes virtuais ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Logs e temporários ────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+
+# ─── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ─── Sistema operacional ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
