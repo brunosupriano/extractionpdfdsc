@@ -1,6 +1,6 @@
 from parsers.base_parser import BasePDFParser, ParserState
 from models import ItemDespesa
-from utils import parse_valor_br, clean_text
+from utils import parse_valor_br, clean_text, clean_description
 import re
 from typing import Dict, Any
 
@@ -74,7 +74,7 @@ class ModeloAParser(BasePDFParser):
                 match_item = re_item.search(line)
                 if match_item:
                     # Formato: [Código] Descrição Valor
-                    desc = clean_text(match_item.group(2))
+                    desc = clean_description(match_item.group(2))
                     valor = parse_valor_br(match_item.group(3))
 
                     if valor and valor > 0:

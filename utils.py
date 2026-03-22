@@ -1,6 +1,23 @@
 import re
 from typing import List, Any
 
+_RE_METER_READING = re.compile(
+    r'M3:\s*[\d,.]+\s*\([^)]+\)\s*-\s*[\d,.]+\s*\([^)]+\)\s*=\s*[\d,.]+',
+    re.IGNORECASE
+)
+_RE_VOLUME = re.compile(r'\d+[,.]\d+\s*m3', re.IGNORECASE)
+
+
+def clean_description(text: str) -> str:
+    """Remove ruídos de descrições de despesa (volumes, leituras de hidrômetro)
+    preservando números de parcela (ex: '1/1', '3/18')."""
+    if not text:
+        return ""
+    text = _RE_METER_READING.sub('', text)
+    text = _RE_VOLUME.sub('', text)
+    return clean_text(text)
+
+
 def parse_valor_br(texto: str | None) -> float | None:
     """
     Converte string monetária brasileira para float de forma robusta.

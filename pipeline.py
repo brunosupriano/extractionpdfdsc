@@ -70,7 +70,7 @@ def process_single_pdf(pdf_path: str, factory: ParserFactory, validator: DataVal
     if not layout_id:
         return None
     
-    parser = factory.get_parser(layout_id, filename)
+    parser = factory.get_parser(layout_id, pdf_path)
     if not parser:
         return None
         

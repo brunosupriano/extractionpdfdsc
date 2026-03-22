@@ -1,5 +1,6 @@
 layouts:
   modelo_a:
+    nome_condominio: "CONDOMINIO RESIDENCIAL ALTA VISTA"
     assinaturas: ["CONDOMINIO RESIDENCIAL ALTA VISTA", "OSCAR SCHICK"]
     regex_bloco: "BL\\.\\s*([A-Z0-9]+)"
     regex_apto:  "(?i)(?:CASA|APTO)\\s+(\\d+)"
@@ -8,20 +9,38 @@ layouts:
     dois_colunas: true
 
   modelo_b:
+    nome_condominio: "RESIDENCIAL ITACOLOMI"
     assinaturas: ["RESIDENCIAL ITACOLOMI", "COMPOSIÇÃO DO RATEIO"]
     regex_bloco: "EDIFÍCIO\\s+(.*?)$"
-    regex_apto:  "^\\s*\\d+\\s+(\\d+)\\s+-\\s+"
+    regex_apto:  "^\\s*(\\d+)\\s+(\\d+)\\s+-\\s+"
     regex_total: "(?i)^\\s*TOTAL\\b[\\s\\|:]*([\\d\\.,]+)"
     item_despesa: "^(\\d{2}/\\d{2}/\\d{4})\\s+(.*?)\\s+([\\d\\.,]+)$"
     dois_colunas: false
 
   modelo_c:
+    nome_condominio: "RESIDENCIAL PORTO ONIX"
     assinaturas: ["RESIDENCIAL PORTO ONIX", "Crédito Real Imóveis"]
-    regex_bloco: "(?i)Bloco:\\s*(.*?)$"
+    regex_bloco: "(?i)Bloco:\\s*(BLOCO\\s+\\d+)"
     regex_apto:  "^\\s*(\\d{3,4})\\b"
     regex_total: "Total\\s+DOC\\s*\\d{3,4}\\s*([\\d\\.,]+)"
     item_despesa: "^(.*?)\\s+([\\d\\.,]+)(?:\\(.*?\\))?$"
     dois_colunas: false
+    # Nomes das colunas de encargo em ordem (posição 0 = primeira coluna de valor,
+    # excluindo Total DOC que é sempre o último).
+    # Definidos explicitamente porque o layout do PDF (Crédito Real Imóveis) posiciona
+    # palavras adjacentes de colunas diferentes mais próximas que palavras da mesma
+    # coluna (ex: "CONSUMO" de "CORSAN CONSUMO" fica a 4px de "GAS"), tornando
+    # impossível inferir os agrupamentos apenas por proximidade geométrica.
+    colunas_despesa:
+      - "SEGURO CONDOMÍNIO"
+      - "CORSAN CONSUMO"
+      - "GAS CONDOMINIO"
+      - "CONDOMÍNIO"
+      - "ENERGIA ELETRICA"
+      - "CONSUMO D'ÁGUA"
+      - "USO QUIOSQUE"
+      - "ÁGUA E ESGOTO"
+      - "ISENÇÃO"
 
 validacao:
   tolerancia_percentual: 0.5

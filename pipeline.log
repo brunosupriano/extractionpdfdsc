@@ -28,3 +28,159 @@
 2026-03-21 15:41:28.867 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
 2026-03-21 15:41:34.293 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
 2026-03-21 15:41:34.298 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-21 16:17:40.106 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 16:17:40.183 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 16:17:40.337 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 16:17:40.352 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 16:17:40.469 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 16:17:40.485 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 16:17:40.856 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 16:17:40.890 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 16:18:06.003 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 16:18:06.016 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 16:18:06.103 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 16:18:06.107 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 16:18:06.188 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 16:18:06.193 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 16:18:06.443 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 16:18:06.454 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 17:18:42.704 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 17:18:42.734 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:18:42.820 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 17:18:42.830 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:18:42.913 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 17:18:42.927 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 17:18:43.158 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 17:18:43.169 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 17:18:59.934 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 17:18:59.944 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:19:00.027 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 17:19:00.032 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:19:00.111 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 17:19:00.117 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 17:19:00.368 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 17:19:00.379 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 17:19:18.850 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 17:19:18.859 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:19:18.953 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 17:19:18.958 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 17:19:19.041 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 17:19:19.046 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 17:19:19.282 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 17:19:19.293 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 18:21:35.912 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 18:21:35.923 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:21:36.004 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 18:21:36.008 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:21:36.087 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 18:21:36.093 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 18:21:36.322 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 18:21:36.333 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 18:27:18.485 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 18:27:18.496 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:27:18.586 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 18:27:18.591 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:27:18.672 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 18:27:18.676 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 18:27:18.924 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 18:27:18.935 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 18:39:51.386 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 18:39:51.459 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:39:51.591 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 18:39:51.604 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:39:51.741 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 18:39:51.776 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 18:39:52.103 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 18:39:52.148 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 18:40:17.932 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 18:40:17.963 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:40:18.095 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 18:40:18.111 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 18:40:18.225 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 18:40:18.236 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 18:40:18.533 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 18:40:18.569 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 18:40:25.359 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-21 18:40:25.362 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-21 19:09:56.198 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 19:09:56.252 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 19:09:56.372 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 19:09:56.394 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 19:09:56.519 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 19:09:56.535 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 19:09:56.840 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 19:09:56.860 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 19:10:01.988 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-21 19:10:01.991 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-21 21:57:26.405 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 21:57:26.474 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 21:57:26.733 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 21:57:26.789 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 21:57:27.031 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 21:57:27.051 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 21:57:27.675 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 21:57:27.753 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 21:58:32.238 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 21:58:32.251 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 21:58:32.367 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 21:58:32.373 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 21:58:32.473 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 21:58:32.479 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 21:58:32.818 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 21:58:32.834 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 22:04:11.652 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-21 22:04:11.687 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 22:04:11.799 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-21 22:04:11.814 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-21 22:04:11.930 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-21 22:04:11.943 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-21 22:04:12.267 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-21 22:04:12.284 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-21 22:04:16.796 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-21 22:04:16.799 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-22 14:05:11.404 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-22 14:05:11.476 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:05:11.565 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-22 14:05:11.588 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:05:11.676 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-22 14:05:11.747 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-22 14:05:11.984 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-22 14:05:12.001 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-22 14:06:07.360 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-22 14:06:07.371 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:06:07.454 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-22 14:06:07.458 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:06:07.539 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-22 14:06:07.544 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-22 14:06:07.788 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-22 14:06:07.799 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-22 14:06:11.287 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-22 14:06:11.289 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-22 14:28:46.051 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-22 14:28:46.080 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:28:46.181 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-22 14:28:46.193 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:28:46.281 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-22 14:28:46.293 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-22 14:28:46.527 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-22 14:28:46.539 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-22 14:32:52.651 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-22 14:32:52.690 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:32:52.808 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-22 14:32:52.822 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:32:52.938 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-22 14:32:52.955 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-22 14:32:53.280 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-22 14:32:53.299 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-22 14:32:57.845 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-22 14:32:57.848 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-03-22 14:36:56.949 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-03-22 14:36:56.963 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:36:57.065 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-03-22 14:36:57.075 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-03-22 14:36:57.188 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-03-22 14:36:57.194 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-03-22 14:36:57.525 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-03-22 14:36:57.542 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-03-22 14:37:12.216 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-03-22 14:37:12.219 | SUCCESS  | __main__:run:126 - Processamento concluído!

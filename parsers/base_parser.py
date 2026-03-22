@@ -30,7 +30,7 @@ class BasePDFParser(ABC):
         self.condominio_data = DadosCondominio(
             arquivo_origem=arquivo_origem,
             modelo_pdf=modelo_pdf,
-            condominio="Não Identificado"
+            condominio=config.get('nome_condominio', 'Não Identificado')
         )
         self.current_page = 1
 
