@@ -184,3 +184,13 @@
 2026-03-22 14:36:57.542 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
 2026-03-22 14:37:12.216 | SUCCESS  | excel_exporter:export:88 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
 2026-03-22 14:37:12.219 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-03 11:39:13.013 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: Modelo1.pdf
+2026-04-03 11:39:13.095 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-04-03 11:39:13.215 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.PDF
+2026-04-03 11:39:13.241 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_a
+2026-04-03 11:39:13.351 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-03 11:39:13.398 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-03 11:39:13.711 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo4.pdf
+2026-04-03 11:39:13.752 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-03 11:39:24.127 | SUCCESS  | excel_exporter:export:129 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-04-03 11:39:24.130 | SUCCESS  | __main__:run:126 - Processamento concluído!
