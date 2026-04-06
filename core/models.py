@@ -16,6 +16,8 @@ class ValidationStatus(str, Enum):
 class ItemDespesa(BaseModel):
     descricao: str
     valor: float
+    tipo_despesa: Optional[str] = None   # categoria canônica (AGUA, GAS, ENERGIA…)
+    volume_m3: Optional[float] = None    # consumo em m³ quando aplicável
 
 class DadosApartamento(BaseModel):
     apartamento: str

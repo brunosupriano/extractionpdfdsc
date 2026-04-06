@@ -13,7 +13,14 @@
       "Bash(del \"D:\\\\Relatório Roberta\\\\extractors\\\\markitdown_extractor.py\")",
       "Bash(del \"D:\\\\Relatório Roberta\\\\extractors\\\\pdfplumber_extractor.py\")",
       "Bash(python -c \":*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(pip install:*)",
+      "Bash(mkdir -p /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/core /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/tools /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/scripts)",
+      "Bash(touch /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/core/__init__.py)",
+      "Bash(cp /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/models.py /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/core/models.py)",
+      "Bash(cp /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/utils.py /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/core/utils.py)",
+      "Bash(cp /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/field_normalizer.py /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/core/field_normalizer.py)",
+      "Bash(cp /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/desktop.py /c/Users/BrunoSupriano/Desktop/ExtractionPDFdsc/scripts/desktop.py)"
     ]
   }
 }

@@ -5,7 +5,7 @@ layouts:
     regex_bloco: "BL\\.\\s*([A-Z0-9]+)"
     regex_apto:  "(?i)(?:CASA|APTO)\\s+(\\d+)"
     regex_total: "(?i)Com\\s+multa\\s*[:\\s]*([\\d\\.,]+)"
-    item_despesa: "^(\\d+)?\\s*(.*?)\\s+([\\d\\.,]+)\\s*\\S?$"
+    item_despesa: "^(\\d+)?\\s*(.*?)\\s+(-?[\\d\\.,]+)\\s*\\S?$"
     dois_colunas: true
 
   modelo_b:
@@ -14,7 +14,7 @@ layouts:
     regex_bloco: "EDIFÍCIO\\s+(.*?)$"
     regex_apto:  "^\\s*(\\d+)\\s+(\\d+)\\s+-\\s+"
     regex_total: "(?i)^\\s*TOTAL\\b[\\s\\|:]*([\\d\\.,]+)"
-    item_despesa: "^(\\d{2}/\\d{2}/\\d{4})\\s+(.*?)\\s+([\\d\\.,]+)$"
+    item_despesa: "^(\\d{2}/\\d{2}/\\d{4})\\s+(.*?)\\s+(-?[\\d\\.,]+)$"
     dois_colunas: false
 
   modelo_c:

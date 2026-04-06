@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tools/debug_modelo_c.py input_pdfs/modelo3.pdf)",
+      "Bash(python pipeline.py --input-dir input_pdfs --output-dir output --log-level DEBUG)"
+    ]
+  }
+}

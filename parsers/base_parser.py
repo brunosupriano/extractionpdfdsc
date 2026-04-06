@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
 from enum import Enum
 from typing import List, Optional, Any, Dict
-from models import ItemDespesa, DadosApartamento, DadosBloco, DadosCondominio
-from utils import clean_text
+from core.models import ItemDespesa, DadosApartamento, DadosBloco, DadosCondominio
+from core.utils import clean_text, extract_volume_m3, clean_description
+from core.field_normalizer import normalize_tipo_despesa
 import re
 from loguru import logger
 
@@ -83,3 +84,19 @@ class BasePDFParser(ABC):
         """Limpa o buffer do apartamento atual sem removê-lo do bloco."""
         self.current_apt = None
         self.transition_to(ParserState.READING_BLOCO)
+
+    def _create_item_despesa(self, raw_desc: str, valor: float) -> ItemDespesa:
+        """Cria ItemDespesa com extração de volume m³ e categorização automática.
+
+        Sempre extrai o volume ANTES de limpar a descrição (clean_description
+        remove a leitura de hidrômetro/m³ do texto para deixar só o nome do item).
+        """
+        volume = extract_volume_m3(raw_desc)
+        desc_limpa = clean_description(raw_desc)
+        tipo = normalize_tipo_despesa(desc_limpa)
+        return ItemDespesa(
+            descricao=desc_limpa,
+            valor=valor,
+            tipo_despesa=tipo,
+            volume_m3=volume,
+        )

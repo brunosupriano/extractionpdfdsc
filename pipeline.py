@@ -7,13 +7,13 @@ from typing import List, Optional
 from loguru import logger
 from tqdm import tqdm
 
-from layout_detector import ParserFactory
-from data_validator import DataValidator
-from excel_exporter import ExcelExporter
-from models import DadosCondominio
+from core.layout_detector import ParserFactory
+from core.data_validator import DataValidator
+from core.excel_exporter import ExcelExporter
+from core.models import DadosCondominio
 from parsers.modelo_a_parser import ModeloAParser
 from parsers.modelos_concretos import ModeloBParser, ModeloCParser, ModeloDParser
-from utils import group_words_by_line
+from core.utils import group_words_by_line
 
 app = typer.Typer(help="Pipeline de Extração de Dados Financeiros de Condomínios.")
 

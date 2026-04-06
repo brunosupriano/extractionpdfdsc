@@ -194,3 +194,235 @@
 2026-04-03 11:39:13.752 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
 2026-04-03 11:39:24.127 | SUCCESS  | excel_exporter:export:129 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
 2026-04-03 11:39:24.130 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-06 10:15:15.684 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo1.pdf
+2026-04-06 10:15:15.702 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-06 10:15:16.043 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.pdf
+2026-04-06 10:15:16.056 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 10:15:23.278 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-06 10:15:23.286 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 10:15:28.450 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 99.4% | Apto 106 (Pág 1) | Total PDF: R$1884.19 | Soma extraída: R$11.34 | Diferença: R$1872.85
+2026-04-06 10:15:28.450 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (3): SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78
+2026-04-06 10:15:28.450 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 106...
+2026-04-06 10:15:28.714 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 106. Soma: R$11.34 | Total PDF: R$1884.19 | Falta: R$1872.85 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:28.714 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 120 (Pág 1) | Total PDF: R$12553.76 | Soma extraída: R$0.00 | Diferença: R$12553.76
+2026-04-06 10:15:28.714 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:28.714 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 120...
+2026-04-06 10:15:28.954 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 120. Soma: R$0.00 | Total PDF: R$12553.76 | Falta: R$12553.76 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:28.954 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 121 (Pág 1) | Total PDF: R$5157.14 | Soma extraída: R$0.00 | Diferença: R$5157.14
+2026-04-06 10:15:28.954 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:28.954 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 121...
+2026-04-06 10:15:29.239 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 121. Soma: R$0.00 | Total PDF: R$5157.14 | Falta: R$5157.14 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:29.239 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 145 (Pág 1) | Total PDF: R$2.13 | Soma extraída: R$0.00 | Diferença: R$2.13
+2026-04-06 10:15:29.239 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:29.239 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 145...
+2026-04-06 10:15:29.503 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 145. Soma: R$0.00 | Total PDF: R$2.13 | Falta: R$2.13 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:29.503 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 158 (Pág 1) | Total PDF: R$15.81 | Soma extraída: R$0.00 | Diferença: R$15.81
+2026-04-06 10:15:29.503 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:29.503 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 158...
+2026-04-06 10:15:29.774 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 158. Soma: R$0.00 | Total PDF: R$15.81 | Falta: R$15.81 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:29.774 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 233 (Pág 1) | Total PDF: R$8.39 | Soma extraída: R$0.00 | Diferença: R$8.39
+2026-04-06 10:15:29.774 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:29.775 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 233...
+2026-04-06 10:15:30.142 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 233. Soma: R$0.00 | Total PDF: R$8.39 | Falta: R$8.39 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:30.142 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 260 (Pág 1) | Total PDF: R$28.65 | Soma extraída: R$0.00 | Diferença: R$28.65
+2026-04-06 10:15:30.142 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:30.142 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 260...
+2026-04-06 10:15:30.409 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 260. Soma: R$0.00 | Total PDF: R$28.65 | Falta: R$28.65 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:30.409 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 532 (Pág 1) | Total PDF: R$12.88 | Soma extraída: R$0.00 | Diferença: R$12.88
+2026-04-06 10:15:30.410 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:30.410 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 532...
+2026-04-06 10:15:30.672 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 532. Soma: R$0.00 | Total PDF: R$12.88 | Falta: R$12.88 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:30.674 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 713 (Pág 1) | Total PDF: R$6.31 | Soma extraída: R$0.00 | Diferença: R$6.31
+2026-04-06 10:15:30.674 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:30.674 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 713...
+2026-04-06 10:15:31.014 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 713. Soma: R$0.00 | Total PDF: R$6.31 | Falta: R$6.31 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:31.014 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4074 (Pág 1) | Total PDF: R$38.96 | Soma extraída: R$0.00 | Diferença: R$38.96
+2026-04-06 10:15:31.014 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:31.014 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4074...
+2026-04-06 10:15:31.340 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 4074. Soma: R$0.00 | Total PDF: R$38.96 | Falta: R$38.96 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:31.340 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4302 (Pág 1) | Total PDF: R$29.44 | Soma extraída: R$0.00 | Diferença: R$29.44
+2026-04-06 10:15:31.340 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:31.340 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4302...
+2026-04-06 10:15:31.592 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 4302. Soma: R$0.00 | Total PDF: R$29.44 | Falta: R$29.44 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:31.592 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 291 (Pág 1) | Total PDF: R$380.00 | Soma extraída: R$0.00 | Diferença: R$380.00
+2026-04-06 10:15:31.592 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:15:31.592 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 291...
+2026-04-06 10:15:31.850 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 291. Soma: R$0.00 | Total PDF: R$380.00 | Falta: R$380.00 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:15:35.515 | SUCCESS  | excel_exporter:export:146 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-04-06 10:15:35.518 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-06 10:17:28.121 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo1.pdf
+2026-04-06 10:17:28.130 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-06 10:17:28.440 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.pdf
+2026-04-06 10:17:28.449 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 10:17:35.202 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-06 10:17:35.215 | INFO     | layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 10:17:43.499 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 99.4% | Apto 106 (Pág 1) | Total PDF: R$1884.19 | Soma extraída: R$11.34 | Diferença: R$1872.85
+2026-04-06 10:17:43.499 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (3): SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78
+2026-04-06 10:17:43.499 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 106...
+2026-04-06 10:17:43.858 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 106. Soma: R$11.34 | Total PDF: R$1884.19 | Falta: R$1872.85 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:43.858 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 120 (Pág 1) | Total PDF: R$12553.76 | Soma extraída: R$0.00 | Diferença: R$12553.76
+2026-04-06 10:17:43.858 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:43.858 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 120...
+2026-04-06 10:17:44.283 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 120. Soma: R$0.00 | Total PDF: R$12553.76 | Falta: R$12553.76 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:44.283 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 121 (Pág 1) | Total PDF: R$5157.14 | Soma extraída: R$0.00 | Diferença: R$5157.14
+2026-04-06 10:17:44.283 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:44.283 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 121...
+2026-04-06 10:17:44.721 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 121. Soma: R$0.00 | Total PDF: R$5157.14 | Falta: R$5157.14 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:44.721 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 145 (Pág 1) | Total PDF: R$2.13 | Soma extraída: R$0.00 | Diferença: R$2.13
+2026-04-06 10:17:44.721 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:44.721 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 145...
+2026-04-06 10:17:45.214 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 145. Soma: R$0.00 | Total PDF: R$2.13 | Falta: R$2.13 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:45.215 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 158 (Pág 1) | Total PDF: R$15.81 | Soma extraída: R$0.00 | Diferença: R$15.81
+2026-04-06 10:17:45.215 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:45.215 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 158...
+2026-04-06 10:17:45.781 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 158. Soma: R$0.00 | Total PDF: R$15.81 | Falta: R$15.81 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:45.781 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 233 (Pág 1) | Total PDF: R$8.39 | Soma extraída: R$0.00 | Diferença: R$8.39
+2026-04-06 10:17:45.781 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:45.782 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 233...
+2026-04-06 10:17:46.292 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 233. Soma: R$0.00 | Total PDF: R$8.39 | Falta: R$8.39 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:46.292 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 260 (Pág 1) | Total PDF: R$28.65 | Soma extraída: R$0.00 | Diferença: R$28.65
+2026-04-06 10:17:46.293 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:46.293 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 260...
+2026-04-06 10:17:46.667 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 260. Soma: R$0.00 | Total PDF: R$28.65 | Falta: R$28.65 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:46.667 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 532 (Pág 1) | Total PDF: R$12.88 | Soma extraída: R$0.00 | Diferença: R$12.88
+2026-04-06 10:17:46.667 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:46.667 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 532...
+2026-04-06 10:17:47.026 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 532. Soma: R$0.00 | Total PDF: R$12.88 | Falta: R$12.88 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:47.026 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 713 (Pág 1) | Total PDF: R$6.31 | Soma extraída: R$0.00 | Diferença: R$6.31
+2026-04-06 10:17:47.026 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:47.026 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 713...
+2026-04-06 10:17:47.425 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 713. Soma: R$0.00 | Total PDF: R$6.31 | Falta: R$6.31 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:47.425 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4074 (Pág 1) | Total PDF: R$38.96 | Soma extraída: R$0.00 | Diferença: R$38.96
+2026-04-06 10:17:47.425 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:47.425 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4074...
+2026-04-06 10:17:47.866 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 4074. Soma: R$0.00 | Total PDF: R$38.96 | Falta: R$38.96 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:47.866 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4302 (Pág 1) | Total PDF: R$29.44 | Soma extraída: R$0.00 | Diferença: R$29.44
+2026-04-06 10:17:47.866 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:47.866 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4302...
+2026-04-06 10:17:48.249 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 4302. Soma: R$0.00 | Total PDF: R$29.44 | Falta: R$29.44 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:48.249 | WARNING  | data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 291 (Pág 1) | Total PDF: R$380.00 | Soma extraída: R$0.00 | Diferença: R$380.00
+2026-04-06 10:17:48.249 | WARNING  | data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 10:17:48.249 | WARNING  | data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 291...
+2026-04-06 10:17:48.624 | ERROR    | data_validator:validate_and_fallback:68 - Fallback falhou para 291. Soma: R$0.00 | Total PDF: R$380.00 | Falta: R$380.00 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 10:17:53.527 | SUCCESS  | excel_exporter:export:146 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-04-06 10:17:53.530 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-06 13:36:01.024 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo1.pdf
+2026-04-06 13:36:01.032 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-06 13:36:01.664 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.pdf
+2026-04-06 13:36:01.678 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 13:36:06.937 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-06 13:36:06.944 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 13:36:12.121 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 99.4% | Apto 106 (Pág 1) | Total PDF: R$1884.19 | Soma extraída: R$11.34 | Diferença: R$1872.85
+2026-04-06 13:36:12.121 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (3): SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78 | SEGURO CONDOMÍNIO=3.78
+2026-04-06 13:36:12.121 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 106...
+2026-04-06 13:36:12.359 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 106. Soma: R$11.34 | Total PDF: R$1884.19 | Falta: R$1872.85 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:12.364 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 120 (Pág 1) | Total PDF: R$12553.76 | Soma extraída: R$0.00 | Diferença: R$12553.76
+2026-04-06 13:36:12.364 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:12.364 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 120...
+2026-04-06 13:36:12.604 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 120. Soma: R$0.00 | Total PDF: R$12553.76 | Falta: R$12553.76 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:12.604 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 121 (Pág 1) | Total PDF: R$5157.14 | Soma extraída: R$0.00 | Diferença: R$5157.14
+2026-04-06 13:36:12.608 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:12.608 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 121...
+2026-04-06 13:36:12.896 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 121. Soma: R$0.00 | Total PDF: R$5157.14 | Falta: R$5157.14 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:12.896 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 145 (Pág 1) | Total PDF: R$2.13 | Soma extraída: R$0.00 | Diferença: R$2.13
+2026-04-06 13:36:12.896 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:12.896 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 145...
+2026-04-06 13:36:13.125 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 145. Soma: R$0.00 | Total PDF: R$2.13 | Falta: R$2.13 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:13.125 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 158 (Pág 1) | Total PDF: R$15.81 | Soma extraída: R$0.00 | Diferença: R$15.81
+2026-04-06 13:36:13.125 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:13.126 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 158...
+2026-04-06 13:36:13.349 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 158. Soma: R$0.00 | Total PDF: R$15.81 | Falta: R$15.81 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:13.358 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 233 (Pág 1) | Total PDF: R$8.39 | Soma extraída: R$0.00 | Diferença: R$8.39
+2026-04-06 13:36:13.358 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:13.358 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 233...
+2026-04-06 13:36:13.641 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 233. Soma: R$0.00 | Total PDF: R$8.39 | Falta: R$8.39 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:13.643 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 260 (Pág 1) | Total PDF: R$28.65 | Soma extraída: R$0.00 | Diferença: R$28.65
+2026-04-06 13:36:13.643 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:13.643 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 260...
+2026-04-06 13:36:13.876 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 260. Soma: R$0.00 | Total PDF: R$28.65 | Falta: R$28.65 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:13.876 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 532 (Pág 1) | Total PDF: R$12.88 | Soma extraída: R$0.00 | Diferença: R$12.88
+2026-04-06 13:36:13.876 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:13.876 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 532...
+2026-04-06 13:36:14.104 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 532. Soma: R$0.00 | Total PDF: R$12.88 | Falta: R$12.88 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:14.108 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 713 (Pág 1) | Total PDF: R$6.31 | Soma extraída: R$0.00 | Diferença: R$6.31
+2026-04-06 13:36:14.108 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:14.108 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 713...
+2026-04-06 13:36:14.389 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 713. Soma: R$0.00 | Total PDF: R$6.31 | Falta: R$6.31 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:14.391 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4074 (Pág 1) | Total PDF: R$38.96 | Soma extraída: R$0.00 | Diferença: R$38.96
+2026-04-06 13:36:14.391 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:14.391 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4074...
+2026-04-06 13:36:14.613 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 4074. Soma: R$0.00 | Total PDF: R$38.96 | Falta: R$38.96 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:14.613 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4302 (Pág 1) | Total PDF: R$29.44 | Soma extraída: R$0.00 | Diferença: R$29.44
+2026-04-06 13:36:14.613 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:14.613 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4302...
+2026-04-06 13:36:14.839 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 4302. Soma: R$0.00 | Total PDF: R$29.44 | Falta: R$29.44 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:14.839 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 291 (Pág 1) | Total PDF: R$380.00 | Soma extraída: R$0.00 | Diferença: R$380.00
+2026-04-06 13:36:14.839 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 13:36:14.839 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 291...
+2026-04-06 13:36:15.061 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 291. Soma: R$0.00 | Total PDF: R$380.00 | Falta: R$380.00 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 13:36:18.178 | SUCCESS  | core.excel_exporter:export:146 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-04-06 13:36:18.179 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-06 14:01:18.262 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo1.pdf
+2026-04-06 14:01:18.301 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-06 14:01:18.721 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.pdf
+2026-04-06 14:01:18.747 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 14:01:23.737 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-06 14:01:23.757 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 14:01:24.218 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 80.1% | Apto 106 (Pág 1) | Total PDF: R$29.09 | Soma extraída: R$5.79 | Diferença: R$23.30
+2026-04-06 14:01:24.219 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (2): CONSUMO GAS AP 204 (=3.78 | CONSUMO GAS AP 402 (=2.01
+2026-04-06 14:01:24.219 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 106...
+2026-04-06 14:01:24.432 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 106. Soma: R$5.79 | Total PDF: R$29.09 | Falta: R$23.30 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:24.432 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 120 (Pág 1) | Total PDF: R$257.60 | Soma extraída: R$0.00 | Diferença: R$257.60
+2026-04-06 14:01:24.432 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:24.432 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 120...
+2026-04-06 14:01:24.634 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 120. Soma: R$0.00 | Total PDF: R$257.60 | Falta: R$257.60 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:24.635 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 40.6% | Apto 121 (Pág 1) | Total PDF: R$53.07 | Soma extraída: R$31.52 | Diferença: R$21.55
+2026-04-06 14:01:24.635 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (4): CONSUMO D'ÁGUA AP 40=18.43 | CONSUMO D'ÁGUA AP 50=0.09 | CONSUMO D'ÁGUA AP 50=4.31 | CONSUMO D'ÁGUA AP 60=8.69
+2026-04-06 14:01:24.635 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 121...
+2026-04-06 14:01:24.902 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 121. Soma: R$31.52 | Total PDF: R$53.07 | Falta: R$21.55 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:24.902 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 145 (Pág 1) | Total PDF: R$2.12 | Soma extraída: R$0.00 | Diferença: R$2.12
+2026-04-06 14:01:24.902 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:24.902 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 145...
+2026-04-06 14:01:25.107 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 145. Soma: R$0.00 | Total PDF: R$2.12 | Falta: R$2.12 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:25.107 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 158 (Pág 1) | Total PDF: R$15.80 | Soma extraída: R$0.00 | Diferença: R$15.80
+2026-04-06 14:01:25.107 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:25.107 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 158...
+2026-04-06 14:01:25.315 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 158. Soma: R$0.00 | Total PDF: R$15.80 | Falta: R$15.80 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:25.315 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 233 (Pág 1) | Total PDF: R$8.40 | Soma extraída: R$0.00 | Diferença: R$8.40
+2026-04-06 14:01:25.315 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:25.315 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 233...
+2026-04-06 14:01:25.566 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 233. Soma: R$0.00 | Total PDF: R$8.40 | Falta: R$8.40 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:25.566 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 260 (Pág 1) | Total PDF: R$28.66 | Soma extraída: R$0.00 | Diferença: R$28.66
+2026-04-06 14:01:25.571 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:25.571 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 260...
+2026-04-06 14:01:25.783 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 260. Soma: R$0.00 | Total PDF: R$28.66 | Falta: R$28.66 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:25.783 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 532 (Pág 1) | Total PDF: R$12.89 | Soma extraída: R$0.00 | Diferença: R$12.89
+2026-04-06 14:01:25.783 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:25.783 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 532...
+2026-04-06 14:01:25.989 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 532. Soma: R$0.00 | Total PDF: R$12.89 | Falta: R$12.89 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:25.989 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 713 (Pág 1) | Total PDF: R$6.32 | Soma extraída: R$0.00 | Diferença: R$6.32
+2026-04-06 14:01:25.989 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:25.989 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 713...
+2026-04-06 14:01:26.242 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 713. Soma: R$0.00 | Total PDF: R$6.32 | Falta: R$6.32 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:26.243 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4074 (Pág 1) | Total PDF: R$38.96 | Soma extraída: R$0.00 | Diferença: R$38.96
+2026-04-06 14:01:26.243 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:26.243 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4074...
+2026-04-06 14:01:26.444 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 4074. Soma: R$0.00 | Total PDF: R$38.96 | Falta: R$38.96 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:26.447 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 4302 (Pág 1) | Total PDF: R$29.45 | Soma extraída: R$0.00 | Diferença: R$29.45
+2026-04-06 14:01:26.447 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:26.447 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 4302...
+2026-04-06 14:01:26.646 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 4302. Soma: R$0.00 | Total PDF: R$29.45 | Falta: R$29.45 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:26.651 | WARNING  | core.data_validator:validate_and_fallback:41 - Divergência 100.0% | Apto 291 (Pág 1) | Total PDF: R$65.00 | Soma extraída: R$0.00 | Diferença: R$65.00
+2026-04-06 14:01:26.652 | WARNING  | core.data_validator:validate_and_fallback:47 -   Itens capturados (0): 
+2026-04-06 14:01:26.652 | WARNING  | core.data_validator:validate_and_fallback:54 -   Acionando FALLBACK pdfplumber para 291...
+2026-04-06 14:01:26.855 | ERROR    | core.data_validator:validate_and_fallback:68 - Fallback falhou para 291. Soma: R$0.00 | Total PDF: R$65.00 | Falta: R$65.00 — verifique regex_apto/item_despesa no config.yaml para este PDF.
+2026-04-06 14:01:29.729 | SUCCESS  | core.excel_exporter:export:146 - Arquivo consolidado gerado com sucesso: ./output\consolidado_despesas.xlsx
+2026-04-06 14:01:29.732 | SUCCESS  | __main__:run:126 - Processamento concluído!
+2026-04-06 14:16:03.912 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo1.pdf
+2026-04-06 14:16:03.918 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_b
+2026-04-06 14:16:04.245 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo2.pdf
+2026-04-06 14:16:04.255 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 14:16:09.801 | INFO     | __main__:process_single_pdf:67 - Iniciando processamento cirúrgico: modelo3.pdf
+2026-04-06 14:16:09.815 | INFO     | core.layout_detector:detect_layout:43 - Layout detectado via assinatura: modelo_c
+2026-04-06 14:16:15.657 | SUCCESS  | core.excel_exporter:export:146 - Arquivo consolidado gerado com sucesso: output\consolidado_despesas.xlsx
+2026-04-06 14:16:15.661 | SUCCESS  | __main__:run:126 - Processamento concluído!

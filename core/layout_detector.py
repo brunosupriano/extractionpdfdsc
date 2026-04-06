@@ -8,11 +8,11 @@ from rapidfuzz import process, fuzz
 
 class ParserFactory:
     """Fábrica de parsers que identifica o layout do PDF e instancia o parser correto."""
-    
+
     def __init__(self, config_path: str = "config.yaml"):
         with open(config_path, 'r', encoding='utf-8') as f:
             self.config = yaml.safe_load(f)
-        
+
         self.layout_configs = self.config.get('layouts', {})
         self._parsers_registry: Dict[str, Type[BasePDFParser]] = {}
 
@@ -22,7 +22,7 @@ class ParserFactory:
 
     def detect_layout(self, pdf_path: str) -> Optional[str]:
         """Detecta o layout do PDF lendo a primeira página com PyMuPDF.
-        
+
         Utiliza heurísticas de assinaturas e correspondência fuzzy para robustez.
         """
         try:
@@ -30,11 +30,11 @@ class ParserFactory:
             if doc.page_count == 0:
                 logger.error(f"PDF vazio: {pdf_path}")
                 return None
-            
+
             # Extrai texto da página 1 (metadados e assinaturas costumam estar aqui)
             page1_text = doc[0].get_text().upper()
             doc.close()
-            
+
             # Heurística 1: Assinaturas exatas e parciais
             for layout_id, layout_cfg in self.layout_configs.items():
                 signatures = [s.upper() for s in layout_cfg.get('assinaturas', [])]
@@ -42,7 +42,7 @@ class ParserFactory:
                     if sig in page1_text:
                         logger.info(f"Layout detectado via assinatura: {layout_id}")
                         return layout_id
-            
+
             # Heurística 2: Fuzzy Matching (Caso de OCR imperfeito)
             # Tenta encontrar a melhor correspondência para as assinaturas
             all_sigs = []
@@ -51,7 +51,7 @@ class ParserFactory:
                 for sig in layout_cfg.get('assinaturas', []):
                     all_sigs.append(sig.upper())
                     sig_to_layout[sig.upper()] = layout_id
-            
+
             if all_sigs:
                 best_match = process.extractOne(page1_text, all_sigs, scorer=fuzz.partial_ratio)
                 if best_match and best_match[1] > 85: # Threshold de 85% de confiança
@@ -72,6 +72,6 @@ class ParserFactory:
         if not parser_cls:
             logger.error(f"Parser não registrado para o layout: {layout_id}")
             return None
-        
+
         layout_cfg = self.layout_configs.get(layout_id)
         return parser_cls(layout_cfg, arquivo_origem, layout_id)

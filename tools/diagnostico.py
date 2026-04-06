@@ -1,7 +1,10 @@
 import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import re
 import fitz
-from utils import group_words_by_line, parse_valor_br
+from core.utils import group_words_by_line, parse_valor_br
 
 def diagnosticar(pdf_path: str):
     try:

@@ -1,6 +1,5 @@
 from parsers.base_parser import BasePDFParser, ParserState
-from models import ItemDespesa
-from utils import parse_valor_br, clean_text, clean_description
+from core.utils import parse_valor_br, clean_text, clean_description
 import re
 from typing import Dict, Any
 
@@ -74,13 +73,20 @@ class ModeloAParser(BasePDFParser):
                 match_item = re_item.search(line)
                 if match_item:
                     # Formato: [Código] Descrição Valor
-                    desc = clean_description(match_item.group(2))
+                    raw_desc = match_item.group(2)
                     valor = parse_valor_br(match_item.group(3))
 
-                    if valor and valor > 0:
-                        # Ignora ruídos que não são itens de despesa reais
-                        if len(desc) > 3 and not any(x in desc.upper() for x in ["CASA", "BL.", "MULTA"]):
-                            self.current_apt.despesas.append(ItemDespesa(descricao=desc, valor=valor))
+                    # Inclui valores negativos (isenções, descontos) — exceto zero exato
+                    if valor is not None and valor != 0.0:
+                        desc_upper = raw_desc.upper()
+                        # Filtros de ruído: cabeçalhos de apto/bloco (falsos positivos do regex)
+                        # MULTA é excluída pois o total_impresso já usa o subtotal sem multa
+                        if len(raw_desc.strip()) > 2 and not any(
+                            x in desc_upper for x in ["CASA", "BL.", "MULTA"]
+                        ):
+                            self.current_apt.despesas.append(
+                                self._create_item_despesa(raw_desc, valor)
+                            )
                 else:
                     # Valor numérico isolado (sem match de item) = candidato a subtotal.
                     # Itens em modelo_a são sempre de linha única, então não há

@@ -1,6 +1,6 @@
 import pandas as pd
 from typing import List
-from models import DadosCondominio, ValidationStatus
+from core.models import DadosCondominio, ValidationStatus
 from loguru import logger
 import os
 from openpyxl import load_workbook
@@ -25,6 +25,8 @@ class ExcelExporter:
         apt_rows = []
         despesa_rows = []
 
+        raw_rows = []  # aba Despesas_Raw: um item por linha com tipo e volume
+
         for cond in resultados:
             for bloco in cond.blocos:
                 for apt in bloco.apartamentos:
@@ -43,11 +45,22 @@ class ExcelExporter:
                     })
                     for item in apt.despesas:
                         despesa_rows.append({
-                            "Arquivo_Origem":  cond.arquivo_origem,
-                            "Bloco":           bloco.bloco,
-                            "Apartamento":     apt.apartamento,
+                            "Arquivo_Origem":    cond.arquivo_origem,
+                            "Bloco":             bloco.bloco,
+                            "Apartamento":       apt.apartamento,
                             "Descricao_Despesa": item.descricao,
-                            "Valor_Despesa":   item.valor,
+                            "Valor_Despesa":     item.valor,
+                        })
+                        raw_rows.append({
+                            "Arquivo_Origem":    cond.arquivo_origem,
+                            "Condominio":        cond.condominio,
+                            "Bloco":             bloco.bloco,
+                            "Apartamento":       apt.apartamento,
+                            "Descricao_Despesa": item.descricao,
+                            "Tipo_Despesa":      item.tipo_despesa or "NAO_CLASSIFICADO",
+                            "Valor_Despesa":     item.valor,
+                            "Volume_M3":         item.volume_m3,
+                            "Pagina_Origem":     apt.pagina_origem,
                         })
 
         df_apt = pd.DataFrame(apt_rows)
@@ -119,11 +132,15 @@ class ExcelExporter:
                 })
         df_resumo_bloco = pd.DataFrame(resumo_bloco_rows)
 
-        # Gravar as 3 abas
+        df_raw = pd.DataFrame(raw_rows) if raw_rows else pd.DataFrame()
+
+        # Gravar as 4 abas
         with pd.ExcelWriter(self.output_path, engine='openpyxl') as writer:
             df_detalhado.to_excel(writer, sheet_name='Detalhado', index=False)
             df_resumo_pdf.to_excel(writer, sheet_name='Resumo_PDF', index=False)
             df_resumo_bloco.to_excel(writer, sheet_name='Resumo_Bloco', index=False)
+            if not df_raw.empty:
+                df_raw.to_excel(writer, sheet_name='Despesas_Raw', index=False)
 
         self._aplicar_formatacao()
         logger.success(f"Arquivo consolidado gerado com sucesso: {self.output_path}")
